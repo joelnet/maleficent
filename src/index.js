@@ -5,7 +5,7 @@ const map = require("mojiscript/list/map");
 const fs = require("fs-extra")
 const { join } = require("path")
 
-const outfile = join(process.cwd(), "maleficent.json")
+const outfile = join(process.env.INIT_CWD || process.cwd(), "maleficent.json")
 
 const plugins = [
   { key: "env", plugin: require("./plugins/getEnvironmentVariables") },
