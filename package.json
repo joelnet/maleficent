@@ -1,0 +1,24 @@
+{
+  "name": "maleficent",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Joel Thoms",
+  "license": "MIT",
+  "bin": {
+    "maleficent": "src/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "npm run test -- --coverage",
+    "lint": "eslint .",
+    "postinstall": "node src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "mojiscript": "^0.12.5",
+    "npmcard": "^1.0.3"
+  },
+  "devDependencies": {
+  }
+}
